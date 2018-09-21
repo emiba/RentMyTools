@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Raven.Client.Documents.Session;
 
 namespace RentMyTools.Api.Controllers
 {
@@ -10,11 +11,18 @@ namespace RentMyTools.Api.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly IDocumentSession session;
+
+        public ValuesController(IDocumentSession session)
+        {
+            this.session = session;
+        }
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "value1", "value2", session != null ? "Yes" : "No" };
         }
 
         // GET api/values/5

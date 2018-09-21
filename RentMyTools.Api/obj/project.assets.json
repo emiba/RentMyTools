@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "Lambda2Js.Signed/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/Lambda2Js.Signed.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Lambda2Js.Signed.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -2638,6 +2650,954 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "RavenDB.Client/4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Lambda2Js.Signed": "3.1.0",
+          "Microsoft.CSharp": "4.5.0",
+          "Newtonsoft.Json": "11.0.2",
+          "System.Buffers": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
+          "System.Security.Cryptography.Cng": "4.5.0",
+          "System.Threading.Tasks.Extensions": "4.5.1"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Raven.Client.dll": {},
+          "lib/netcoreapp2.1/Sparrow.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Raven.Client.dll": {},
+          "lib/netcoreapp2.1/Sparrow.dll": {}
+        }
+      },
+      "RavenDB.Embedded/4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "RavenDB.Client": "4.1.1",
+          "System.Runtime.Loader": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Raven.Embedded.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Raven.Embedded.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/RavenDBServer/BouncyCastle.Crypto.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/BouncyCastle.Crypto.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/CsvHelper.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/CsvHelper.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/DasMulli.Win32.ServiceUtils.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/DasMulli.Win32.ServiceUtils.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Esprima.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Esprima.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/GeoAPI.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/GeoAPI.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Google.Protobuf.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Google.Protobuf.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Jint.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Jint.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Lambda2Js.Signed.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Lambda2Js.Signed.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Lucene.Net.Contrib.Spatial.NTS.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Lucene.Net.Contrib.Spatial.NTS.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Lucene.Net.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Lucene.Net.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Connections.Abstractions.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Connections.Abstractions.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Hosting.Abstractions.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Hosting.Abstractions.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Hosting.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Hosting.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Http.Abstractions.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Http.Extensions.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Http.Extensions.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Http.Features.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Http.Features.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Http.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Http.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.ResponseCompression.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.ResponseCompression.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Core.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Core.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Https.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Https.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.WebSockets.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.WebSockets.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.WebUtilities.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.AspNetCore.WebUtilities.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.CodeAnalysis.CSharp.Workspaces.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.CodeAnalysis.CSharp.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.CodeAnalysis.CSharp.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.CodeAnalysis.Workspaces.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.CodeAnalysis.Workspaces.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.CodeAnalysis.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.CodeAnalysis.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.CommandLineUtils.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.CommandLineUtils.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.Configuration.Abstractions.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.Binder.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.Configuration.Binder.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.CommandLine.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.Configuration.CommandLine.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.Configuration.EnvironmentVariables.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.FileExtensions.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.Configuration.FileExtensions.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.Json.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.Configuration.Json.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.Configuration.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.DependencyInjection.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.DependencyInjection.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.FileProviders.Abstractions.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.FileProviders.Physical.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.FileProviders.Physical.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.FileSystemGlobbing.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.FileSystemGlobbing.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.Hosting.Abstractions.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.Logging.Abstractions.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Logging.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.Logging.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.ObjectPool.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.ObjectPool.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Options.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.Options.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Primitives.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Extensions.Primitives.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Microsoft.Net.Http.Headers.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Microsoft.Net.Http.Headers.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/MySql.Data.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/MySql.Data.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/NCrontab.Advanced.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/NCrontab.Advanced.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/NetTopologySuite.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/NetTopologySuite.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Newtonsoft.Json.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Newtonsoft.Json.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Npgsql.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Npgsql.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Oracle.ManagedDataAccess.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Oracle.ManagedDataAccess.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Raven.Client.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Raven.Client.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Raven.Server.deps.json": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Raven.Server.deps.json"
+          },
+          "contentFiles/any/any/RavenDBServer/Raven.Server.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Raven.Server.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Raven.Server.runtimeconfig.json": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Raven.Server.runtimeconfig.json"
+          },
+          "contentFiles/any/any/RavenDBServer/Raven.Studio.zip": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Raven.Studio.zip"
+          },
+          "contentFiles/any/any/RavenDBServer/SharpSnmpLib.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/SharpSnmpLib.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Sparrow.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Sparrow.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Spatial4n.Core.NTS.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Spatial4n.Core.NTS.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.Composition.AttributedModel.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.Composition.AttributedModel.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.Composition.Convention.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.Composition.Convention.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.Composition.Hosting.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.Composition.Hosting.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.Composition.Runtime.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.Composition.Runtime.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.Composition.TypedParts.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.Composition.TypedParts.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.Configuration.ConfigurationManager.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.Configuration.ConfigurationManager.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.Data.SqlClient.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.Data.SqlClient.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.IO.Pipelines.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.IO.Pipelines.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.Net.WebSockets.WebSocketProtocol.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.Net.WebSockets.WebSocketProtocol.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.Runtime.CompilerServices.Unsafe.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.Runtime.CompilerServices.Unsafe.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.Security.Cryptography.ProtectedData.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.Security.Cryptography.ProtectedData.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.Security.Permissions.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.Security.Permissions.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.Text.Encoding.CodePages.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.Text.Encoding.CodePages.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/System.Text.Encodings.Web.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/System.Text.Encodings.Web.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/Voron.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/Voron.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/cs/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/cs/Microsoft.CodeAnalysis.CSharp.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/cs/Microsoft.CodeAnalysis.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/cs/Microsoft.CodeAnalysis.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/de/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/de/Microsoft.CodeAnalysis.CSharp.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/de/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/de/Microsoft.CodeAnalysis.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/de/Microsoft.CodeAnalysis.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/de/Microsoft.CodeAnalysis.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/es/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/es/Microsoft.CodeAnalysis.CSharp.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/es/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/es/Microsoft.CodeAnalysis.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/es/Microsoft.CodeAnalysis.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/es/Microsoft.CodeAnalysis.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/fr/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/fr/Microsoft.CodeAnalysis.CSharp.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/fr/Microsoft.CodeAnalysis.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/fr/Microsoft.CodeAnalysis.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/it/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/it/Microsoft.CodeAnalysis.CSharp.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/it/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/it/Microsoft.CodeAnalysis.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/it/Microsoft.CodeAnalysis.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/it/Microsoft.CodeAnalysis.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/ja/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/ja/Microsoft.CodeAnalysis.CSharp.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/ja/Microsoft.CodeAnalysis.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/ja/Microsoft.CodeAnalysis.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/ko/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/ko/Microsoft.CodeAnalysis.CSharp.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/ko/Microsoft.CodeAnalysis.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/ko/Microsoft.CodeAnalysis.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/libsodium.arm.so": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/libsodium.arm.so"
+          },
+          "contentFiles/any/any/RavenDBServer/libsodium.x64.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/libsodium.x64.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/libsodium.x64.so": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/libsodium.x64.so"
+          },
+          "contentFiles/any/any/RavenDBServer/libsodium.x86.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/libsodium.x86.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/libsodium.x86.so": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/libsodium.x86.so"
+          },
+          "contentFiles/any/any/RavenDBServer/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/pl/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/pl/Microsoft.CodeAnalysis.CSharp.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/pl/Microsoft.CodeAnalysis.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/pl/Microsoft.CodeAnalysis.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/pt-BR/Microsoft.CodeAnalysis.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/pt-BR/Microsoft.CodeAnalysis.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/ru/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/ru/Microsoft.CodeAnalysis.CSharp.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/ru/Microsoft.CodeAnalysis.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/ru/Microsoft.CodeAnalysis.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/linux-arm/native/libuv.so": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/linux-arm/native/libuv.so"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/linux-arm64/native/libuv.so": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/linux-arm64/native/libuv.so"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/linux-armel/native/libuv.so": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/linux-armel/native/libuv.so"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/linux-x64/native/libuv.so": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/linux-x64/native/libuv.so"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/osx/native/libuv.dylib": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/osx/native/libuv.dylib"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/win-arm/native/libuv.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/win-arm/native/libuv.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/win-arm64/native/sni.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/win-arm64/native/sni.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/win-x64/native/libuv.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/win-x64/native/libuv.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/win-x64/native/sni.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/win-x64/native/sni.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/win-x86/native/libuv.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/win-x86/native/libuv.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/win-x86/native/sni.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/win-x86/native/sni.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/tr/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/tr/Microsoft.CodeAnalysis.CSharp.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/tr/Microsoft.CodeAnalysis.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/tr/Microsoft.CodeAnalysis.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/zh-Hans/Microsoft.CodeAnalysis.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/zh-Hans/Microsoft.CodeAnalysis.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll"
+          },
+          "contentFiles/any/any/RavenDBServer/zh-Hant/Microsoft.CodeAnalysis.resources.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "RavenDBServer/zh-Hant/Microsoft.CodeAnalysis.resources.dll"
+          }
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -3684,6 +4644,20 @@
           }
         }
       },
+      "System.Runtime.Loader/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.Loader.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/System.Runtime.Loader.dll": {}
+        }
+      },
       "System.Runtime.Numerics/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4337,6 +5311,19 @@
     }
   },
   "libraries": {
+    "Lambda2Js.Signed/3.1.0": {
+      "sha512": "eJGWIi9HzYEKTtHQRNXkeH7t6OccjprZxR8PglFDOysNQhuyeZ2QianDP4t29DdmpJzA5yx/Lu48q4VrYdfoWw==",
+      "type": "package",
+      "path": "lambda2js.signed/3.1.0",
+      "files": [
+        "lambda2js.signed.3.1.0.nupkg.sha512",
+        "lambda2js.signed.nuspec",
+        "lib/net40/Lambda2Js.Signed.dll",
+        "lib/net40/Lambda2Js.Signed.xml",
+        "lib/netstandard1.0/Lambda2Js.Signed.dll",
+        "lib/netstandard1.0/Lambda2Js.Signed.xml"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "rMDlyePoxggkmN/qgha1+BR2Uy+dOr38xKCQOPfVNKGY07R2nYJGMTKJFE1XFgwD70RYUNazf2fqutjJF18XgQ==",
       "type": "package",
@@ -6933,6 +7920,184 @@
         "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.1.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "RavenDB.Client/4.1.1": {
+      "sha512": "8vXzRSDmpZPbozxSirgDiNedEFsECGR8iU1YX9LpjtLE74woXl4rIM5a0IMO99qzgoWVlKEOHkVAZMzo4Yn3AA==",
+      "type": "package",
+      "path": "ravendb.client/4.1.1",
+      "files": [
+        ".signature.p7s",
+        "lib/netcoreapp2.1/Raven.Client.dll",
+        "lib/netcoreapp2.1/Sparrow.dll",
+        "lib/netstandard2.0/Raven.Client.dll",
+        "lib/netstandard2.0/Sparrow.dll",
+        "ravendb.client.4.1.1.nupkg.sha512",
+        "ravendb.client.nuspec"
+      ]
+    },
+    "RavenDB.Embedded/4.1.1": {
+      "sha512": "9Dq7tbg8vt+iNI9SwGjf8fQ7zORxPwNy01r+ZQ+GrPHVia8d7jeFW3GJwd+BuTXiMcB9FB8i7ue2xnXifcYYgQ==",
+      "type": "package",
+      "path": "ravendb.embedded/4.1.1",
+      "files": [
+        ".signature.p7s",
+        "contentFiles/any/any/RavenDBServer/BouncyCastle.Crypto.dll",
+        "contentFiles/any/any/RavenDBServer/CsvHelper.dll",
+        "contentFiles/any/any/RavenDBServer/DasMulli.Win32.ServiceUtils.dll",
+        "contentFiles/any/any/RavenDBServer/Esprima.dll",
+        "contentFiles/any/any/RavenDBServer/GeoAPI.dll",
+        "contentFiles/any/any/RavenDBServer/Google.Protobuf.dll",
+        "contentFiles/any/any/RavenDBServer/Jint.dll",
+        "contentFiles/any/any/RavenDBServer/Lambda2Js.Signed.dll",
+        "contentFiles/any/any/RavenDBServer/Lucene.Net.Contrib.Spatial.NTS.dll",
+        "contentFiles/any/any/RavenDBServer/Lucene.Net.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Hosting.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Http.Extensions.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Http.Features.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Http.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.ResponseCompression.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Https.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.Server.Kestrel.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.WebSockets.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.AspNetCore.WebUtilities.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.CodeAnalysis.CSharp.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.CodeAnalysis.Workspaces.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.CodeAnalysis.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.CommandLineUtils.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.Binder.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.CommandLine.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.Json.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Configuration.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.DependencyInjection.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.FileProviders.Physical.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Logging.Abstractions.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Logging.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.ObjectPool.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Options.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Extensions.Primitives.dll",
+        "contentFiles/any/any/RavenDBServer/Microsoft.Net.Http.Headers.dll",
+        "contentFiles/any/any/RavenDBServer/MySql.Data.dll",
+        "contentFiles/any/any/RavenDBServer/NCrontab.Advanced.dll",
+        "contentFiles/any/any/RavenDBServer/NetTopologySuite.dll",
+        "contentFiles/any/any/RavenDBServer/Newtonsoft.Json.dll",
+        "contentFiles/any/any/RavenDBServer/Npgsql.dll",
+        "contentFiles/any/any/RavenDBServer/Oracle.ManagedDataAccess.dll",
+        "contentFiles/any/any/RavenDBServer/Raven.Client.dll",
+        "contentFiles/any/any/RavenDBServer/Raven.Server.deps.json",
+        "contentFiles/any/any/RavenDBServer/Raven.Server.dll",
+        "contentFiles/any/any/RavenDBServer/Raven.Server.runtimeconfig.json",
+        "contentFiles/any/any/RavenDBServer/Raven.Studio.zip",
+        "contentFiles/any/any/RavenDBServer/SharpSnmpLib.dll",
+        "contentFiles/any/any/RavenDBServer/Sparrow.dll",
+        "contentFiles/any/any/RavenDBServer/Spatial4n.Core.NTS.dll",
+        "contentFiles/any/any/RavenDBServer/System.Composition.AttributedModel.dll",
+        "contentFiles/any/any/RavenDBServer/System.Composition.Convention.dll",
+        "contentFiles/any/any/RavenDBServer/System.Composition.Hosting.dll",
+        "contentFiles/any/any/RavenDBServer/System.Composition.Runtime.dll",
+        "contentFiles/any/any/RavenDBServer/System.Composition.TypedParts.dll",
+        "contentFiles/any/any/RavenDBServer/System.Configuration.ConfigurationManager.dll",
+        "contentFiles/any/any/RavenDBServer/System.Data.SqlClient.dll",
+        "contentFiles/any/any/RavenDBServer/System.IO.Pipelines.dll",
+        "contentFiles/any/any/RavenDBServer/System.Net.WebSockets.WebSocketProtocol.dll",
+        "contentFiles/any/any/RavenDBServer/System.Runtime.CompilerServices.Unsafe.dll",
+        "contentFiles/any/any/RavenDBServer/System.Security.Cryptography.ProtectedData.dll",
+        "contentFiles/any/any/RavenDBServer/System.Security.Permissions.dll",
+        "contentFiles/any/any/RavenDBServer/System.Text.Encoding.CodePages.dll",
+        "contentFiles/any/any/RavenDBServer/System.Text.Encodings.Web.dll",
+        "contentFiles/any/any/RavenDBServer/Voron.dll",
+        "contentFiles/any/any/RavenDBServer/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/cs/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "contentFiles/any/any/RavenDBServer/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/cs/Microsoft.CodeAnalysis.resources.dll",
+        "contentFiles/any/any/RavenDBServer/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/de/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "contentFiles/any/any/RavenDBServer/de/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/de/Microsoft.CodeAnalysis.resources.dll",
+        "contentFiles/any/any/RavenDBServer/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/es/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "contentFiles/any/any/RavenDBServer/es/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/es/Microsoft.CodeAnalysis.resources.dll",
+        "contentFiles/any/any/RavenDBServer/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/fr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "contentFiles/any/any/RavenDBServer/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/fr/Microsoft.CodeAnalysis.resources.dll",
+        "contentFiles/any/any/RavenDBServer/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/it/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "contentFiles/any/any/RavenDBServer/it/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/it/Microsoft.CodeAnalysis.resources.dll",
+        "contentFiles/any/any/RavenDBServer/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/ja/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "contentFiles/any/any/RavenDBServer/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/ja/Microsoft.CodeAnalysis.resources.dll",
+        "contentFiles/any/any/RavenDBServer/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/ko/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "contentFiles/any/any/RavenDBServer/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/ko/Microsoft.CodeAnalysis.resources.dll",
+        "contentFiles/any/any/RavenDBServer/libsodium.arm.so",
+        "contentFiles/any/any/RavenDBServer/libsodium.x64.dll",
+        "contentFiles/any/any/RavenDBServer/libsodium.x64.so",
+        "contentFiles/any/any/RavenDBServer/libsodium.x86.dll",
+        "contentFiles/any/any/RavenDBServer/libsodium.x86.so",
+        "contentFiles/any/any/RavenDBServer/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/pl/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "contentFiles/any/any/RavenDBServer/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/pl/Microsoft.CodeAnalysis.resources.dll",
+        "contentFiles/any/any/RavenDBServer/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "contentFiles/any/any/RavenDBServer/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/pt-BR/Microsoft.CodeAnalysis.resources.dll",
+        "contentFiles/any/any/RavenDBServer/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/ru/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "contentFiles/any/any/RavenDBServer/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/ru/Microsoft.CodeAnalysis.resources.dll",
+        "contentFiles/any/any/RavenDBServer/runtimes/linux-arm/native/libuv.so",
+        "contentFiles/any/any/RavenDBServer/runtimes/linux-arm64/native/libuv.so",
+        "contentFiles/any/any/RavenDBServer/runtimes/linux-armel/native/libuv.so",
+        "contentFiles/any/any/RavenDBServer/runtimes/linux-x64/native/libuv.so",
+        "contentFiles/any/any/RavenDBServer/runtimes/osx/native/libuv.dylib",
+        "contentFiles/any/any/RavenDBServer/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll",
+        "contentFiles/any/any/RavenDBServer/runtimes/win-arm/native/libuv.dll",
+        "contentFiles/any/any/RavenDBServer/runtimes/win-arm64/native/sni.dll",
+        "contentFiles/any/any/RavenDBServer/runtimes/win-x64/native/libuv.dll",
+        "contentFiles/any/any/RavenDBServer/runtimes/win-x64/native/sni.dll",
+        "contentFiles/any/any/RavenDBServer/runtimes/win-x86/native/libuv.dll",
+        "contentFiles/any/any/RavenDBServer/runtimes/win-x86/native/sni.dll",
+        "contentFiles/any/any/RavenDBServer/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
+        "contentFiles/any/any/RavenDBServer/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll",
+        "contentFiles/any/any/RavenDBServer/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "contentFiles/any/any/RavenDBServer/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "contentFiles/any/any/RavenDBServer/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/tr/Microsoft.CodeAnalysis.resources.dll",
+        "contentFiles/any/any/RavenDBServer/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "contentFiles/any/any/RavenDBServer/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
+        "contentFiles/any/any/RavenDBServer/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "contentFiles/any/any/RavenDBServer/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "contentFiles/any/any/RavenDBServer/zh-Hant/Microsoft.CodeAnalysis.resources.dll",
+        "lib/net461/Raven.Embedded.dll",
+        "lib/netstandard2.0/Raven.Embedded.dll",
+        "ravendb.embedded.4.1.1.nupkg.sha512",
+        "ravendb.embedded.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -9884,6 +11049,36 @@
         "system.runtime.interopservices.runtimeinformation.nuspec"
       ]
     },
+    "System.Runtime.Loader/4.3.0": {
+      "sha512": "DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
+      "type": "package",
+      "path": "system.runtime.loader/4.3.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/_._",
+        "lib/netstandard1.5/System.Runtime.Loader.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/netstandard1.5/System.Runtime.Loader.dll",
+        "ref/netstandard1.5/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/de/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/es/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/fr/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/it/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ja/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ko/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ru/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.Loader.xml",
+        "system.runtime.loader.4.3.0.nupkg.sha512",
+        "system.runtime.loader.nuspec"
+      ]
+    },
     "System.Runtime.Numerics/4.3.0": {
       "sha512": "yMH+MfdzHjy17l2KESnPiF2dwq7T+xLnSJar7slyimAkUh/gTrS9/UQOtv7xarskJ2/XDSNvfLGOBQPjL7PaHQ==",
       "type": "package",
@@ -11496,7 +12691,9 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.Extensions.Configuration.Binder >= 2.1.1",
+      "Microsoft.NETCore.App >= 2.1.0",
+      "RavenDB.Embedded >= 4.1.1"
     ]
   },
   "packageFolders": {
@@ -11546,10 +12743,18 @@
             "version": "[2.1.1, )",
             "autoReferenced": true
           },
+          "Microsoft.Extensions.Configuration.Binder": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "RavenDB.Embedded": {
+            "target": "Package",
+            "version": "[4.1.1, )"
           }
         },
         "imports": [
