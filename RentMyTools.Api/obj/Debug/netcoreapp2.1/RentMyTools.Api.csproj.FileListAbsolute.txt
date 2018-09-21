@@ -1,0 +1,14 @@
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\bin\Debug\netcoreapp2.1\RentMyTools.Api.deps.json
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\bin\Debug\netcoreapp2.1\RentMyTools.Api.runtimeconfig.json
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\bin\Debug\netcoreapp2.1\RentMyTools.Api.runtimeconfig.dev.json
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\bin\Debug\netcoreapp2.1\RentMyTools.Api.dll
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\bin\Debug\netcoreapp2.1\RentMyTools.Api.pdb
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\obj\Debug\netcoreapp2.1\RentMyTools.Api.csprojAssemblyReference.cache
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\obj\Debug\netcoreapp2.1\RentMyTools.Api.csproj.CoreCompileInputs.cache
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\obj\Debug\netcoreapp2.1\RentMyTools.Api.RazorAssemblyInfo.cache
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\obj\Debug\netcoreapp2.1\RentMyTools.Api.RazorAssemblyInfo.cs
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\obj\Debug\netcoreapp2.1\RentMyTools.Api.AssemblyInfoInputs.cache
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\obj\Debug\netcoreapp2.1\RentMyTools.Api.AssemblyInfo.cs
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\obj\Debug\netcoreapp2.1\RentMyTools.Api.RazorTargetAssemblyInfo.cache
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\obj\Debug\netcoreapp2.1\RentMyTools.Api.dll
+C:\Users\emilb\source\repos\RentMyTools\RentMyTools.Api\obj\Debug\netcoreapp2.1\RentMyTools.Api.pdb
