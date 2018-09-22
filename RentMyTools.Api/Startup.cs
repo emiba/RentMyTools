@@ -14,6 +14,7 @@ using Microsoft.Extensions.Options;
 using Raven.Client.Documents;
 using Raven.Client.Documents.Session;
 using Raven.Embedded;
+using RentMyTools.Api.Infrastructure.DataOperations;
 using static System.Environment;
 
 namespace RentMyTools.Api
@@ -42,6 +43,7 @@ namespace RentMyTools.Api
                 .GetDocumentStore(DBName)
                 .Initialize());
             services.AddScoped<IDocumentSession>(provider => provider.GetService<IDocumentStore>().OpenSession());
+            services.AddScoped<IDataOperationExecutor, RavenDBDataOperationExecutor>();
         }
 
         private EmbeddedServer InitializeDBServer(IServiceProvider provider)

@@ -2,32 +2,29 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Raven.Client.Documents.Session;
+using RentMyTools.Api.Infrastructure.DataOperations;
 using RentMyTools.Api.Models;
 
 namespace RentMyTools.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ToolsController : ControllerBase
+    public class ToolsController : RentMyToolsController
     {
-        private readonly IDocumentSession _session;
-
-        public ToolsController(IDocumentSession session)
-        {
-            _session = session;
-        }
+        public ToolsController(IDataOperationExecutor dataOperationExecutor)
+            : base(dataOperationExecutor)
+        { }
 
         [HttpGet]
         public ActionResult<IEnumerable<Tool>> Get()
         {
-            var data = _session.Query<Tool>();
-            return Ok(data.ToArray());
+            return Ok(ExecuteQuery(new FindEntitiesQuery<Tool>()));
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Tool> GetAction(string id)
+        public ActionResult<Tool> Get(string id)
         {
-            var tool = _session.Load<Tool>(id);
+            var tool = ExecuteQuery(new GetEntityByIdQuery<Tool> { Id = id });
             if (tool == null)
                 return NotFound();
             
@@ -37,12 +34,23 @@ namespace RentMyTools.Api.Controllers
         [HttpPost]
         public ActionResult<Tool> Create(Tool tool)
         {
-            tool.Id = string.Empty;
+            var response = SaveTool(tool);
+            if (response == null)
+                return NotFound();
 
-            _session.Store(tool);
-            _session.SaveChanges();
+            return Ok(response);
+        }
 
-            return tool;
+        private Tool SaveTool(Tool tool)
+        {
+            return DataOperationExecutor.Execute(new SaveEntityCommand<Tool>
+            {
+                EntityToSave = tool,
+                Mapping = (src, dst) => {
+                    dst.Description = src.Description;
+                    dst.Title = src.Title;
+                }
+            });
         }
 
         [HttpPut]
@@ -51,29 +59,25 @@ namespace RentMyTools.Api.Controllers
             if (string.IsNullOrEmpty(tool.Id))
                 return NotFound();
 
-            var entity = _session.Load<Tool>(tool.Id);
-            if (entity == null)
+            var response = SaveTool(tool);
+            if (response == null)
                 return NotFound();
 
-            entity.Description = tool.Description;
-            entity.Title = tool.Title;
-
-            _session.SaveChanges();
-
-            return entity;
+            return Ok(response);
         }
 
         [HttpDelete("{id}")]
         public ActionResult Delete(string id)
         {
-            var tool = _session.Load<Tool>(id);
-            if (tool == null)
+            try
+            {
+                DataOperationExecutor.Execute(new DeleteEntityCommand<Tool>{ Id = id });
+                return NoContent();
+            }
+            catch
+            {
                 return NotFound();
-
-            _session.Delete(tool);
-            _session.SaveChanges();
-
-            return NoContent();
+            }
         }
     }
 }
