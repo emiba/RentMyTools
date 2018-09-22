@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using RentMyTools.Api.Models;
 
 namespace RentMyTools.Api.Infrastructure.DataOperations
 {

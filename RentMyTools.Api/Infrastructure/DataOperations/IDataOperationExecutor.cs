@@ -1,5 +1,3 @@
-using RentMyTools.Api.Models;
-
 namespace RentMyTools.Api.Infrastructure.DataOperations
 {
     public interface IDataOperationExecutor

@@ -1,5 +1,4 @@
 using Raven.Client.Documents;
-using RentMyTools.Api.Models;
 
 namespace RentMyTools.Api.Infrastructure.DataOperations
 {
