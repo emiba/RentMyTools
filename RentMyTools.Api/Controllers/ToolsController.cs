@@ -46,10 +46,6 @@ namespace RentMyTools.Api.Controllers
             return DataOperationExecutor.Execute(new SaveEntityCommand<Tool>
             {
                 EntityToSave = tool,
-                Mapping = (src, dst) => {
-                    dst.Description = src.Description;
-                    dst.Title = src.Title;
-                }
             });
         }
 

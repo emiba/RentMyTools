@@ -32,5 +32,7 @@ namespace RentMyTools.Api.Tests.Infrastructure.DataOperations
     }
 
     public class TestEntity : Entity
-    { }
+    {
+        public string AString { get; set; }
+    }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -9,13 +10,16 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyModel;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Raven.Client.Documents;
 using Raven.Client.Documents.Session;
 using Raven.Embedded;
 using RentMyTools.Api.Infrastructure.DataOperations;
+using RentMyTools.Api.Infrastructure.Mapping;
 using static System.Environment;
+using IConfigurationProvider = AutoMapper.IConfigurationProvider;
 
 namespace RentMyTools.Api
 {
@@ -34,6 +38,7 @@ namespace RentMyTools.Api
         {
             RegisterDatabaseServices(services);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddAutoMapper();
         }
 
         private void RegisterDatabaseServices(IServiceCollection services)

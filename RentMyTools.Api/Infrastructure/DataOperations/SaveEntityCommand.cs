@@ -1,18 +1,18 @@
 using System;
+using AutoMapper;
 using RentMyTools.Api.Models;
 
 namespace RentMyTools.Api.Infrastructure.DataOperations
 {
-    public class SaveEntityCommand<T> : Command<T> where T : Entity, new()
+    public class SaveEntityCommand<T> : Command<T>, INeedMapper where T : Entity, new()
     {
+        public IMapper Mapper { get; set; }
         public T EntityToSave { get; set; }
-
-        public Action<T,T> Mapping { get; set; }
 
         public override void Execute()
         {
             var entity = PrimeEntity();
-            Mapping(EntityToSave, entity);
+            Mapper.Map(EntityToSave, entity);
             Result = entity;
         }
 
