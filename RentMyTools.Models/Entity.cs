@@ -1,4 +1,4 @@
-namespace RentMyTools.Api.Models
+namespace RentMyTools.Models
 {
     public class Entity
     {

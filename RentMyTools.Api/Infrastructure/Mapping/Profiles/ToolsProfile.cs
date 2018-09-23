@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using RentMyTools.Api.Models;
+using RentMyTools.Models;
 
 namespace RentMyTools.Api.Infrastructure.Mapping.Profiles
 {

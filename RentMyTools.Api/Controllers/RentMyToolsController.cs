@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using RentMyTools.Api.Infrastructure.DataOperations;
-using RentMyTools.Api.Models;
 
 namespace RentMyTools.Api.Controllers
 {
@@ -8,7 +7,7 @@ namespace RentMyTools.Api.Controllers
     {
         protected IDataOperationExecutor DataOperationExecutor;
 
-        public RentMyToolsController(IDataOperationExecutor dataOperationExecutor)
+        protected RentMyToolsController(IDataOperationExecutor dataOperationExecutor)
         {
             DataOperationExecutor = dataOperationExecutor;
         }

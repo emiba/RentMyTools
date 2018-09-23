@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Machine.Specifications;
 using NSubstitute;
 using Raven.Client.Documents.Session;
 using RentMyTools.Api.Infrastructure.DataOperations;
-using RentMyTools.Api.Models;
+using RentMyTools.Models;
+using System;
 
 namespace RentMyTools.Api.Tests.Infrastructure.DataOperations
 {
